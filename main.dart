@@ -2,28 +2,22 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    Column(
-      children: <Widget>[
-        Text(
-          'Deliver features faster',
-          textDirection: TextDirection.ltr,
+      MaterialApp(
+        theme: ThemeData(
+            primaryColor: Colors.green
         ),
-        Text(
-          'Craft beautiful UIs',
-          textDirection: TextDirection.ltr,
-        ),
-        Text(
-          'Craft beautiful UIs',
-          textDirection: TextDirection.ltr,
-        ),
-        Column(children: <Widget>[
-          Text(
-            'Craft beautiful UIs',
-            textDirection: TextDirection.ltr,
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text('transferências'),
           ),
-        ],
-        ),
-      ],
-    ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              // Add your onPressed code here!
+            },
+            child: const Icon(Icons.add),
+            backgroundColor: Colors.blueAccent,
+          ),
+        )
+      )
   );
 }
